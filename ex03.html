@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercico 3</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #a9a9a9;
+        }
+        legend {
+            font-size: 14px;
+        }
+        .campo {
+            margin-bottom: 8px;
+        }
+        /* Alinha o texto das etiquetas à esquerda */
+        label {
+            display: inline-block;
+            width: 70px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 5px;
+        }
+        .botoes {
+            margin-top: 15px;
+        }
+        button {
+            padding: 4px 10px;
+            margin-right: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #707070;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+
+    <form>
+        <!-- Grupo: Dados pessoais -->
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" size="30">
+            </div>
+            
+            <div class="campo">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" size="35">
+            </div>
+            
+            <div class="campo">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" size="32">
+            </div>
+            
+            <div class="campo">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- Grupo: Dados profissionais -->
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            
+            <p>Natureza do Cargo</p>
+            <input type="radio" name="cargo" value="gerencia" checked> Gerência
+            <input type="radio" name="cargo" value="financeiro"> Financeiro
+            <input type="radio" name="cargo" value="recepcao"> Recepção
+            <input type="radio" name="cargo" value="administrativo"> Administrativo
+            <input type="radio" name="cargo" value="juridico"> Jurídico
+            
+            <br><br>
+            
+            <p>Área de interesse</p>
+            <input type="checkbox" name="interesse" value="computacao"> Computação
+            <input type="checkbox" name="interesse" value="biologia"> Biologia
+            <input type="checkbox" name="interesse" value="meio_ambiente"> Meio Ambiente
+            <input type="checkbox" name="interesse" value="engenharia"> Engenharia
+            <input type="checkbox" name="interesse" value="historia"> História
+            
+            <br><br>
+            
+            <label for="curriculo">Mini-currículo:</label>
+            <textarea id="curriculo" name="curriculo"></textarea>
+        </fieldset>
+
+        <!-- Botões de ação no rodapé -->
+        <div class="botoes">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+
+</body>
+</html>
